@@ -1,5 +1,8 @@
 package hu.wolfmanfp.timetable;
 
+import org.json.JSONException;
+import org.json.JSONObject;
+
 /**
  * 
  * @author FPeter
@@ -7,14 +10,24 @@ package hu.wolfmanfp.timetable;
  */
 public class Course {
 	private String name;
-	private String dayOfWeek;
+	private int dayOfWeek;
 	private int startHour;
 	private int startMinute;
 	private int endHour;
 	private int endMinute;
 	private String room;
 
-	public Course(String name, String dayOfWeek, int startHour, int startMinute, int endHour, int endMinute,
+	/**
+	 * This class contains all information about a university course.
+	 * @param name The name of the course.
+	 * @param dayOfWeek Range: 1-5 (Monday-Friday)
+	 * @param startHour 
+	 * @param startMinute
+	 * @param endHour
+	 * @param endMinute
+	 * @param room
+	 */
+	public Course(String name, int dayOfWeek, int startHour, int startMinute, int endHour, int endMinute,
 			String room) {
 		this.name = name;
 		this.dayOfWeek = dayOfWeek;
@@ -29,7 +42,7 @@ public class Course {
 		return this.name;
 	}
 	
-	public String getDayOfWeek() {
+	public int getDayOfWeek() {
 		return this.dayOfWeek;
 	}
 	
@@ -73,7 +86,7 @@ public class Course {
 		this.name = name;
 	}
 
-	public void setDayOfWeek(String dayOfWeek) {
+	public void setDayOfWeek(int dayOfWeek) {
 		this.dayOfWeek = dayOfWeek;
 	}
 

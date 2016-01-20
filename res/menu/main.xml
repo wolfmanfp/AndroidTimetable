@@ -2,12 +2,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="hu.wolfmanfp.mikorarend.MainActivity" >
 
-    <item
+   <!--  <item
         android:id="@+id/action_settings"
         android:orderInCategory="2"
         android:icon="@drawable/ic_action_action_settings"
         android:showAsAction="ifRoom|withText"
-        android:title="@string/action_settings"/>
+        android:title="@string/action_settings"/> -->
     
     <item 
         android:id="@+id/action_about"
