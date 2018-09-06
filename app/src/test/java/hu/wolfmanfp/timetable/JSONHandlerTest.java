@@ -12,12 +12,12 @@ import hu.wolfmanfp.timetable.Course;
 import hu.wolfmanfp.timetable.JSONHandler;
 
 public class JSONHandlerTest {
-	private static final String TEST_JSON = "{\"courseList\":[{\"endHour\":9,\"dayOfWeek\":1,\"startHour\":7,\"name\":\"Szoftvertechnol骻ia\",\"startMinute\":45,\"room\":\"A008\",\"endMinute\":30},{\"endHour\":12,\"dayOfWeek\":1,\"startHour\":11,\"name\":\"Kiszolg醠髃 鼁emeltet閟e\",\"startMinute\":15,\"room\":\"A201\",\"endMinute\":45}]}";
+	private static final String TEST_JSON = "{\"courseList\":[{\"endHour\":9,\"dayOfWeek\":1,\"startHour\":7,\"name\":\"Szoftvertechnol贸gia\",\"startMinute\":45,\"room\":\"A008\",\"endMinute\":30},{\"endHour\":12,\"dayOfWeek\":1,\"startHour\":11,\"name\":\"Kiszolg谩l贸k 眉zemeltet茅se\",\"startMinute\":15,\"room\":\"A201\",\"endMinute\":45}]}";
 	
 	@Test
 	public void testWriteJSON() {
-		Course course1 = new Course("Szoftvertechnol骻ia", 1, 7, 45, 9, 30, "A008");
-		Course course2 = new Course("Kiszolg醠髃 鼁emeltet閟e", 1, 11, 15, 12, 45, "A201");
+		Course course1 = new Course("Szoftvertechnol贸gia", 1, 7, 45, 9, 30, "A008");
+		Course course2 = new Course("Kiszolg谩l贸k 眉zemeltet茅se", 1, 11, 15, 12, 45, "A201");
 		List<Course> courseList = new ArrayList<Course>();
 		courseList.add(course1);
 		courseList.add(course2);
