@@ -31,7 +31,7 @@ public class CourseListAdapter extends ArrayAdapter<Course> {
 		Course currentCourse = this.courseList.get(position);
 		TextView dateText = itemView.findViewById(R.id.item_txtDate);
 		dateText.setText(String.format(context.getString(R.string.date_formatted),
-                new DateFormatSymbols().getShortWeekdays()[currentCourse.getDayOfWeek()],
+                new DateFormatSymbols().getShortWeekdays()[currentCourse.getDayOfWeek()+1],
                 currentCourse.getStartHour(),
                 currentCourse.getStartMinute(),
                 currentCourse.getEndHour(),
