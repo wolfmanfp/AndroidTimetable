@@ -89,9 +89,6 @@ public class MainActivity extends Activity {
 
 			this.courseList = JSONHandler.getCourses(this.readFromFile());
 
-			courseList.add(new Course("Szoftvertechnológia", 1, 7, 45, 9, 30, "A008"));
-			courseList.add(new Course("Kiszolgálók üzemeltetése", 1, 11, 15, 12, 45, "A201"));
-
 			ArrayAdapter<Course> adapter = new CourseListAdapter(getActivity(), courseList);
 			list.setAdapter(adapter);
 		}
