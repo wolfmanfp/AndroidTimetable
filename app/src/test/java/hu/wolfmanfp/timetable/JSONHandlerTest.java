@@ -4,11 +4,9 @@ import static org.junit.Assert.*;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.json.JSONException;
-import org.json.JSONObject;
 import org.junit.Test;
 
-import hu.wolfmanfp.timetable.Course;
+import hu.wolfmanfp.timetable.entities.Course;
 import hu.wolfmanfp.timetable.JSONHandler;
 
 public class JSONHandlerTest {

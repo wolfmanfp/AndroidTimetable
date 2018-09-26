@@ -1,7 +1,4 @@
-package hu.wolfmanfp.timetable;
-
-import org.json.JSONException;
-import org.json.JSONObject;
+package hu.wolfmanfp.timetable.entities;
 
 /**
  * 
