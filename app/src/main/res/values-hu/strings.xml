@@ -7,6 +7,6 @@
 	<string name="action_about">Névjegy</string>
     <string name="action_newcourse">Kurzus hozzáadása</string>
     <string name="title_activity_about">Névjegy</string>
-    <string name="about_text">Készítette: Farkas Péter\nQGI1UH\n2016–2018</string>
+    <string name="about_text">Készítette: Farkas Péter\n2016–2018</string>
 	
 </resources>

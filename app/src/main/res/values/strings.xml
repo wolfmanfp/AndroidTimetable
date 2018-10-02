@@ -7,7 +7,7 @@
     <string name="action_about">About</string>
     <string name="action_newcourse">Add new course</string>
     <string name="title_activity_about">About</string>
-    <string name="about_text">Created by: Péter Farkas\nQGI1UH\n2016–2018</string>
+    <string name="about_text">Created by: Péter Farkas\n2016–2018</string>
     <string name="date_formatted">
         <xliff:g>%s %02d:%02d-%02d:%02d</xliff:g>
     </string>
