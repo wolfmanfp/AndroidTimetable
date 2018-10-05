@@ -7,11 +7,13 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import java.text.DateFormatSymbols;
-import java.util.List;
+import org.threeten.bp.format.TextStyle;
 
-import hu.wolfmanfp.timetable.entities.Course;
+import java.util.List;
+import java.util.Locale;
+
 import hu.wolfmanfp.timetable.R;
+import hu.wolfmanfp.timetable.entities.Course;
 
 public class CourseListAdapter extends RecyclerView.Adapter<CourseListViewHolder> {
 	private final Context context;
@@ -33,12 +35,11 @@ public class CourseListAdapter extends RecyclerView.Adapter<CourseListViewHolder
 	@Override
 	public void onBindViewHolder(@NonNull CourseListViewHolder holder, int position) {
 		Course currentCourse = this.courseList.get(position);
+		Locale locale = Locale.getDefault();
 		holder.dateText.setText(String.format(context.getString(R.string.date_formatted),
-				new DateFormatSymbols().getShortWeekdays()[currentCourse.getDayOfWeek()+1],
-				currentCourse.getStartHour(),
-				currentCourse.getStartMinute(),
-				currentCourse.getEndHour(),
-				currentCourse.getEndMinute()
+				currentCourse.getDayOfWeek().getDisplayName(TextStyle.SHORT, locale),
+				currentCourse.getStartTime(),
+				currentCourse.getEndTime()
 		));
 		holder.nameText.setText(currentCourse.getName());
 		holder.roomText.setText(currentCourse.getRoom());
