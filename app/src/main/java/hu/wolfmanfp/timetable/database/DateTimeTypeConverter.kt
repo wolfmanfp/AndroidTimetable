@@ -1,6 +1,6 @@
 package hu.wolfmanfp.timetable.database
 
-import android.arch.persistence.room.TypeConverter
+import androidx.room.TypeConverter
 import org.threeten.bp.DayOfWeek
 import org.threeten.bp.LocalTime
 

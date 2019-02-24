@@ -1,6 +1,6 @@
 package hu.wolfmanfp.timetable.database
 
-import android.arch.persistence.room.*
+import androidx.room.*
 import hu.wolfmanfp.timetable.entities.Course
 
 @Dao

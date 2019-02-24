@@ -8,11 +8,11 @@
     android:paddingTop="0dp"
     tools:context="hu.wolfmanfp.timetable.courselist.CourseListFragment" >
 
-    <android.support.v7.widget.RecyclerView
+    <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/courseListView"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-    </android.support.v7.widget.RecyclerView>
+    </androidx.recyclerview.widget.RecyclerView>
 
 </RelativeLayout>
