@@ -8,8 +8,5 @@
     <string name="action_newcourse">Add new course</string>
     <string name="title_activity_about">About</string>
     <string name="about_text">Created by: Péter Farkas\n2016–2018</string>
-    <string name="date_formatted" translatable="false">
-        <xliff:g>%s %s-%s</xliff:g>
-    </string>
 
 </resources>
