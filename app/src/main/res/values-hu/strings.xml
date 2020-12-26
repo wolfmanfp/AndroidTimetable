@@ -2,11 +2,10 @@
 <resources>
 
     <string name="app_name">Órarend</string>
-    <string name="hello_world">Helló, világ!</string>
     <string name="action_settings">Beállítások</string>
 	<string name="action_about">Névjegy</string>
     <string name="action_newcourse">Kurzus hozzáadása</string>
     <string name="title_activity_about">Névjegy</string>
-    <string name="about_text">Készítette: Farkas Péter\n2016–2018</string>
+    <string name="about_text">Készítette: Farkas Péter\n2016–2021</string>
 	
 </resources>
