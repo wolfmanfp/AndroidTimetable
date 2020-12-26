@@ -5,7 +5,7 @@ import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import androidx.fragment.app.FragmentActivity
-import androidx.fragment.app.transaction
+import androidx.fragment.app.commit
 import hu.wolfmanfp.timetable.courselist.CourseListFragment
 
 class MainActivity : FragmentActivity() {
@@ -14,7 +14,7 @@ class MainActivity : FragmentActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         if (savedInstanceState == null) {
-            supportFragmentManager.transaction {
+            supportFragmentManager.commit {
                 add(R.id.container, CourseListFragment())
             }
         }
