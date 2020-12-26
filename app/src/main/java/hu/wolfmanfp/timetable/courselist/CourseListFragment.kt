@@ -25,7 +25,7 @@ class CourseListFragment : Fragment() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         this.courseList = ArrayList()
-        this.db = Room.databaseBuilder(context!!, TimetableDatabase::class.java, "timetable")
+        this.db = Room.databaseBuilder(requireContext(), TimetableDatabase::class.java, "timetable")
                 .allowMainThreadQueries()
                 .build()
         courseList = db.courseDao().getAll()
@@ -33,7 +33,7 @@ class CourseListFragment : Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         val rootView = inflater.inflate(R.layout.fragment_main, container, false)
-        val adapter = CourseListAdapter(context!!, courseList)
+        val adapter = CourseListAdapter(requireContext(), courseList)
         val layoutManager = LinearLayoutManager(activity) //important for displaying the view
 
         this.list = rootView.findViewById(R.id.courseListView)
